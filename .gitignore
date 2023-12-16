@@ -1,3 +1,17 @@
+final/
+cache/
+*.txt
+
+
+
+
+
+
+
+
+# PYTHON GITIGNORE TEMPLATE FROM GITHUB:
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
