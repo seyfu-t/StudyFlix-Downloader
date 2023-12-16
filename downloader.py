@@ -29,6 +29,7 @@ def download_video(url, m3u8_selector, title_selector):
 
     ffmpeg_audio=[
         "ffmpeg",
+        "-y",
         "-analyzeduration","100M",
         "-probesize","100M",
         "-i",m3u8_url,
@@ -40,6 +41,7 @@ def download_video(url, m3u8_selector, title_selector):
     ]
     ffmpeg_video=[
         "ffmpeg",
+        "-y",
         "-i",m3u8_url,
         "-an",
         "-c:v","copy",
@@ -47,6 +49,7 @@ def download_video(url, m3u8_selector, title_selector):
     ]
     ffmpeg_combine=[
         "ffmpeg",
+        "-y",
         "-i","cache/"+title+".mp4",
         "-i","cache/"+title+".aac",
         "-c:v","copy",
